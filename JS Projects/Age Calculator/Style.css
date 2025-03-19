@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.main {
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    min-height: 70%;
+    width: 80%;
+}
+
+.calculator h1 {
+    font-size: 5rem;
+}
+
+.calculator h1 span {
+    color: rgb(248, 230, 128);
+}
+
+.calculator .input-box {
+    min-height: 30%;
+    max-width: 50%;
+    background-color: #A8C0FF;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculator .input-box input {
+    width: 74%;
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    position: relative;
+
+}
+
+.calculator .input-box button {
+    width: 24%;
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(248, 230, 128);
+}
+
+.calculator .input-box input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    background-position: calc(100% - 20px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#result {
+    font-weight: 600;
+    padding: 2rem 0.3rem;
+    font-size: 3rem;
+}

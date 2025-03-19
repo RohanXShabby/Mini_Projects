@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 173, 173);
+}
+
+.password_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+    width: 20%;
+    /* border: 2px solid black; */
+
+}
+
+.password_container #password {
+    height: 100%;
+    width: 75%;
+    padding: 0 0.5rem;
+    border-radius: 6px;
+    border: 2px solid darkcyan;
+    outline: darkcyan;
+    transition: all 0.4s ease;
+
+}
+
+.password_container #password:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+.password_container #password:hover::placeholder {
+    color: white;
+}
+
+.password_container #password:focus::placeholder {
+    color: white;
+}
+
+.password_container #password:focus {
+    background-color: darkcyan;
+    color: white;
+    outline: 2px solid white;
+}
+
+.password_container #btn {
+    height: 100%;
+    width: 20%;
+    border: 2px solid darkcyan;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    color: darkcyan;
+    transition: all 0.3s ease;
+}
+
+.password_container #btn:hover {
+    background-color: darkcyan;
+    color: white;
+}

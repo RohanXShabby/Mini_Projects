@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    width: 400px;
+    background-color: rgb(96, 136, 253);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 40px;
+    padding-bottom: 50px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+
+nav .btnbg {
+    background-color: #2d3a90;
+    color: white;
+    height: fit-content;
+    padding: 2px 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(4, 0, 56, 0.523);
+    cursor: pointer;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+main .cover-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2em;
+}
+
+main .cover-image img {
+    height: 30vh;
+    width: 30vh;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 10px 20px rgba(4, 0, 56, 0.523);
+}
+
+main .cover-image .title {
+    font-weight: 600;
+}
+
+main .cover-image .sub-title {
+    font-size: 0.7em;
+    color: rgb(44, 44, 44);
+}
+
+#progress {
+    -webkit-appearance: none;
+    margin-top: 10px;
+    width: 130%;
+    height: 20px;
+    background-color: #4559df;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 10px 0px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(4, 0, 56, 0.523);
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #6a7dfa;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: -407px 0 0 400px #2d3a90;
+}
+
+.controls {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls div {
+    background-color: #fff;
+    color: #2d3a90;
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(4, 0, 56, 0.523);
+}
+
+.controls div:nth-child(2) {
+    scale: 1.6;
+    background-color: #2d3a90;
+    color: white;
+}

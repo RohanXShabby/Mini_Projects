@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-192x192.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Style.css">
+    <title>Language | Side Navigation Bar</title>
+</head>
+
+<body>
+    <div class="main">
+        <button onclick="showMenu()" class="menubtn" style="display: none;"><i class='bx bx-menu'></i></button>
+        <div class="sidebar" id="sidebar" style="display: flex;">
+            <button onclick="sidebarHide()" id="cross-btn"><i class='bx bx-x'></i></button>
+            <div class="heading">
+                <h4>Sidebar</h4>
+            </div>
+            <ul>
+                <li><a href="home.html"><i class='bx bxs-home'></i>home</a></li>
+                <li><a href="client.html"><i class='bx bx-male-female'></i>client</a></li>
+                <li><a href="service.html"><i class='bx bxs-book'></i>service</a></li>
+                <li><a href="feature.html"><i class='bx bxs-star'></i>features</a></li>
+                <li><a href="pricing.html"><i class='bx bx-credit-card'></i>pricing</a></li>
+                <li><a href="about.html"><i class='bx bxs-detail'></i>about us</a></li>
+                <li><a href="contanct.html"><i class='bx bxs-phone'></i>contact us</a></li>
+                <li><a href="language.html" style="background-color: white; color: black;"><i
+                            class='bx bx-globe'></i>language</a></li>
+            </ul>
+            <div class="social-links">
+                <i class='bx bxl-facebook-square'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-youtube'></i>
+            </div>
+        </div>
+        <div class="textbox">
+            <div class="textbox-content" style="display:none;">Click Menu Button on your top left</div>
+            <div class="textbox-content">home</div>
+            <div class="textbox-content">client</div>
+            <div class="textbox-content">service</div>
+            <div class="textbox-content">Feature</div>
+            <div class="textbox-content">Pricing</div>
+            <div class="textbox-content">About Us</div>
+            <div class="textbox-content">Contanc Us</div>
+            <div class="textbox-content" style="display: flex;">Language</div>
+        </div>
+    </div>
+    <script>
+        const crossBtn = document.getElementById("cross-btn");
+        const sideBar = document.querySelector(".sidebar");
+        const menuBtn = document.querySelector(".menubtn");
+
+
+        function sidebarHide() {
+            sideBar.style.display = "none";
+            crossBtn.style.display = "none";
+            menuBtn.style.display = "flex";
+            window.location.href = "index.html"
+
+        }
+
+        crossBtn.addEventListener('click', sidebarHide);
+
+        function showMenu() {
+            sideBar.style.display = "flex";
+            crossBtn.style.display = "flex";
+            menuBtn.style.display = "none";
+        }
+        menuBtn.addEventListener('click', showMenu);
+    </script>
+</body>
+
+</html>

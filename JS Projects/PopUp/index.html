@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="app">
+        <button onclick="showpopup()">Submit</button>
+        <div id="popup">
+            <video id="verified" autoplay muted loop src="verified.mp4"></video>
+            <div id="message">
+                <h2>THANK YOU</h2>
+                <p>
+                    We are very <strong>Thankful</strong> that you <br>
+                    provide us your valuable opinion.
+                    <br>
+                    Your submission has been received.
+                    <br>
+                    Check your Email for Confirmation
+                </p>
+            </div>
+            <button id="ok_btn" onclick="hidepopup()">Okay</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
