@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+.container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-height: 10rem;
+    width: 100%;
+    background-color: #0F2167;
+}
+
+.container .footer-head {
+    padding: 0rem 6rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    background-color: #0d1d5d;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-head .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer-head .social-links {
+    display: flex;
+}
+
+.footer-head .social-links a {
+    height: 40px;
+    width: 40px;
+    color: white;
+    text-align: center;
+    line-height: 43px;
+    font-size: 22px;
+    margin: 6px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-head .social-links a:nth-child(1) {
+    background-color: #1DA1F2;
+}
+
+.footer-head .social-links a:nth-child(1):hover {
+    color: #1DA1F2;
+    background-color: white;
+}
+
+.footer-head .social-links a:nth-child(2) {
+    background-color: #1877F2;
+}
+
+.footer-head .social-links a:nth-child(2):hover {
+    color: #1877F2;
+    background-color: white;
+}
+
+.footer-head .social-links a:nth-child(3) {
+    background-color: #e0294b;
+}
+
+.footer-head .social-links a:nth-child(3):hover {
+    color: #e0294b;
+    background-color: white;
+}
+
+.footer-head .social-links a:nth-child(4) {
+    background-color: red;
+}
+
+.footer-head .social-links a:nth-child(4):hover {
+    color: red;
+    background-color: white;
+}
+
+.footer-head .social-links a:nth-child(5) {
+    background-color: #0A66C2;
+}
+
+.footer-head .social-links a:nth-child(5):hover {
+    color: #0A66C2;
+    background-color: white;
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    padding: 0rem 4rem;
+    flex-wrap: wrap;
+}
+
+.footer-body .box {
+    margin: 0px 30px;
+    margin-bottom: 30px;
+}
+
+.footer-body .box .heading {
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-body .box li {
+    list-style: none;
+    font-size: 10px;
+    margin: 3px 0px;
+}
+
+.footer-body .box li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.footer-body .box li a:hover {
+    text-decoration: underline;
+}
+
+.box .Subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box .Subscribe input {
+    background-color: #0F2167;
+    border: 1px solid white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+}
+
+.box .Subscribe input::placeholder {
+    color: white;
+}
+
+.box .Subscribe button {
+    background-color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: #030637;
+    outline: none;
+    cursor: pointer;
+}
+
+.box .Subscribe button:hover {
+    background-color: #eeeeee;
+    font-weight: 500;
+}
+
+.copyright {
+    display: flex;
+    padding: 0rem 6rem;
+    color: white;
+    font-weight: 300;
+    gap: 20px;
+    height: 40px;
+    background-color: #030637;
+    line-height: 40px;
+    justify-content: space-between;
+    font-size: 8px;
+}
+
+.copyright .text-copyright p {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.copyright .text-copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright .text-copyright {
+    display: flex;
+}
+
+.copyright .text-copyright:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-head .logo {
+        font-size: 2rem;
+    }
+
+    .footer-head .social-links a {
+        height: 25px;
+        width: 25px;
+        margin: 2px;
+        line-height: 27px;
+        font-size: 14px;
+
+    }
+
+    .copyright {
+        padding: 0rem 1rem;
+        font-size: 4px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container .footer-head {
+        padding: 0rem 0rem;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        padding: 14px 0px;
+
+    }
+
+    .container .footer-head .logo {
+        font-size: 1.3rem;
+    }
+
+    .footer-body {
+        padding: 0rem 1rem;
+    }
+
+    .footer-body .box {
+        margin: 0px 10px;
+        margin-bottom: 10px;
+    }
+
+    .copyright {
+        padding: 0rem 1rem;
+    }
+}

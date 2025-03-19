@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap);
+
+@media screen {}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #64CCC5;
+    overflow: hidden;
+}
+
+.main-box {
+    height: 100vh;
+    max-width: 450px;
+    padding: 0px 20px;
+    margin: 170px auto;
+
+}
+
+.container {
+    height: 400px;
+    max-width: 450px;
+    border-radius: 12px;
+    background-color: #DAFFFB;
+    margin: 100px auto;
+}
+
+.container .title h1 {
+    padding: 20px 10px;
+    font-size: 30px;
+    margin: 2px auto;
+    position: relative;
+    left: 100px;
+}
+
+.container .title {
+    border-radius: 12px 12px 0px 0px;
+    background-color: #04364A;
+    color: white;
+
+}
+
+.container form {
+    max-height: 300px;
+    min-height: 200px;
+    padding: 20px 20px;
+}
+
+.container .username {
+    padding: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.container .username i {
+    position: relative;
+    font-size: 30px;
+    color: #DAFFFB;
+    background-color: #04364A;
+    border-radius: 8px 0px 0px 8px;
+    padding: 5px;
+}
+
+.container .username input {
+    width: 350px;
+    padding: 8px;
+    border-radius: 0px 8px 8px 0px;
+    outline: none;
+}
+
+.container .username input:focus {
+    border-color: #64CCC5;
+    box-shadow: inset 0px 0px 2px 2px #64CCC5;
+}
+
+.container .pass {
+    position: relative;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.container .pass i {
+    font-size: 30px;
+    color: #DAFFFB;
+    background-color: #04364A;
+    border-radius: 8px 0px 0px 8px;
+    padding: 5px;
+}
+
+.container .pass input {
+    width: 350px;
+    padding: 8px;
+    border-radius: 8px;
+    border-radius: 0px 8px 8px 0px;
+    outline: none;
+}
+
+.container .pass input:focus {
+    border-color: #64CCC5;
+    box-shadow: inset 0px 0px 2px 2px #64CCC5;
+}
+
+.container .f-pass a {
+    color: #04364A;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.container .f-pass a:hover {
+    text-decoration: underline;
+}
+
+.container .btn {
+    width: 100%;
+    margin: 18px 3px;
+    padding: 5px 15px;
+    background-color: #04364A;
+    color: #DAFFFB;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container .not-member {
+    position: relative;
+    width: 60%;
+    margin: auto;
+}

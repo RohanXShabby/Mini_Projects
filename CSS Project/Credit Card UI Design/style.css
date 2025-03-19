@@ -1,0 +1,89 @@
+/* Import Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(156, 206, 250);
+  color: white;
+}
+
+.container {
+  height: 300px;
+  width: 500px;
+  padding: 30px 40px;
+  border-radius: 25px;
+  background: url(images/bg.png);
+  background-size: cover;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .logo {
+  display: flex;
+  align-items: center;
+
+}
+
+.container .logo img {
+  height: 48px;
+}
+
+.container .logo h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0px 12px;
+}
+
+.container .chip img {
+  height: 48px;
+  width: auto;
+}
+
+.container .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.container .owner-detail h2 {
+  font-weight: 600;
+}
+
+.container .owner-detail .number {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.container .owner-detail .name {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.container .valid {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.container .valid .valid-till {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container .valid .date {
+  margin-top: 10px;
+}

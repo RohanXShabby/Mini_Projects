@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+body {
+    height: 100vh;
+    background: url(pexels-dan-cristian-pădureț-15432175\ \(720p\).mp4);
+    display: grid;
+    place-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #ffff;
+}
+
+.container h1 {
+    line-height: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    background: linear-gradient(45deg, rgb(72, 0, 255), rgb(191, 0, 255));
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container form {
+    padding: 10px 20px 50px 20px;
+}
+
+.container form .wrapper {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container form .wrapper input {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+}
+
+.container form .wrapper label {
+    position: absolute;
+    line-height: 50px;
+    opacity: 0.5;
+    pointer-events: none;
+    left: 20px;
+    padding: 0px 3px;
+    z-index: 100;
+    transition: all 0.3s cubic-bezier(0, 1.01, 1, 1.27);
+}
+
+.container form .wrapper input:focus~label {
+    line-height: 0px;
+    opacity: 1;
+    pointer-events: none;
+    left: 20px;
+    color: rgb(49, 49, 49);
+    padding: 0px 3px;
+    top: 8px;
+    font-size: 12px;
+}
+
+.container form .wrapper input:focus {
+    outline: 1px solid rgba(151, 151, 151, 0.673);
+}
+
+.container form .wrapper input:valid~label {
+    line-height: 0px;
+    opacity: 1;
+    pointer-events: none;
+    left: 20px;
+    color: rgb(49, 49, 49);
+    padding: 0px 3px;
+    top: 8px;
+    font-size: 12px;
+}
+
+.container .forget-pass {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container .forget-pass>div input {
+    margin: 0px 4px;
+}
+
+.container .forget-pass a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    opacity: 0.8;
+}
+
+.container .forget-pass a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.container .submit {
+    margin: 40px 0px 20px 0px;
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(209, 71, 255), rgb(65, 179, 255));
+    transition: all 0.3s ease;
+}
+
+.container .submit:hover {
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    background: linear-gradient(45deg, rgb(195, 15, 255), rgb(12, 158, 255));
+}
+
+.container section a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+    opacity: 0.8;
+}
+
+.container section a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
